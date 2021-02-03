@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Buttons from "./Buttons";
 
 function Content() {
    const [switch1, setSwitch1] = useState(false);
@@ -6,25 +7,13 @@ function Content() {
    const [switch3, setSwitch3] = useState(false);
 
    const line1 = () => {
-      if (switch1 === false) {
-         setSwitch1(true);
-      } else {
-         setSwitch1(false);
-      }
+      setSwitch1(!switch1);
    };
    const line2 = () => {
-      if (switch2 === false) {
-         setSwitch2(true);
-      } else {
-         setSwitch2(false);
-      }
+      setSwitch2(!switch2);
    };
    const line3 = () => {
-      if (switch3 === false) {
-         setSwitch3(true);
-      } else {
-         setSwitch3(false);
-      }
+      setSwitch3(!switch3);
    };
 
    return (

@@ -1,5 +1,8 @@
 :root {
    --purlple: #5c48d3;
+   --white: #fff;
+   --green: #46ac4a;
+   --red: #fb0808;
 }
 * {
    font-family: "Montserrat", sans-serif;
@@ -47,6 +50,17 @@ button {
    margin-right: 30px;
    height: 30px;
    width: 50px;
+   border: "1px solid var(--purlple)";
+}
+
+.buttonOK {
+   backgroundcolor: var(--purlple);
+   color: var(--white);
+}
+
+.buttonOK {
+   backgroundcolor: var(--purlple);
+   color: var(--white);
 }
 
 p {
@@ -54,8 +68,8 @@ p {
    justify-content: center;
 }
 .go {
-   background-color: #46ac4a;
-   color: #fff;
+   background-color: var(--green);
+   color: var(--white);
    height: 40px;
    width: 120px;
    font-size: 20px;
@@ -64,8 +78,8 @@ p {
 }
 
 .nowait {
-   background-color: #fb0808;
-   color: #fff;
+   background-color: var(--red);
+   color: var(--white);
    height: 40px;
    width: 120px;
    font-size: 20px;
